@@ -8,10 +8,6 @@ describe('<Dashboard />', () => {
       it('should display controls and display components', () => {
         const { getByText } = render(<Dashboard />);
   
-        const unlocked = getByText(/unlocked/i);
-        const open = getByText(/open/i);
-        const lockGate = getByText(/lock gate/i);
-        const closeGate = getByText(/close gate/i);
 
         expect(getByText(/unlocked/i)).toBeInTheDocument;
         expect(getByText(/open/i)).toBeInTheDocument;
